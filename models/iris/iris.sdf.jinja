@@ -36,7 +36,8 @@
         </surface>
       </collision>
       <visual name='base_link_inertia_visual'>
-        <pose>0.38 0.35 0 0 0 3.14</pose>
+        <!--<pose>0.38 0.35 0 0 0 3.14</pose>-->
+		<pose>0.34 -0.38 0 0 0 1.57</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -89,7 +90,9 @@
 	
 	<!-- ROTOR 0 -->
     <link name='rotor_0'>
-	  <pose>0.338 0.017 0.26 -0.5 0 0</pose>
+	  <!--<pose>0.338 0.017 0.26 -0.5 0 0</pose>-->
+	  <!--<pose>-0.00187896 -0.242705 0.26 0 0 -2.09439510239</pose>-->
+	  <pose>0 -0.338 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -141,7 +144,7 @@
       <child>rotor_0</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>0 0.5 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
@@ -156,8 +159,9 @@
 	
 	<!-- ROTOR 1 -->
     <link name='rotor_1'>
-      <!--<pose>-0.34 0 0.3 -0.5 0 0</pose>-->
-	  <pose>-0.342 0.017 0.26 -0.5 0 0</pose>
+	  <!--<pose>-0.342 0.017 0.26 -0.5 0 0</pose>-->
+	  <!--<pose>-0.00187896 0.242705 0.26 0 0 0</pose>-->
+	  <pose>-0 0.338 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -209,7 +213,7 @@
       <child>rotor_1</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>0 0.5 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
@@ -224,8 +228,9 @@
 	
 	<!-- ROTOR 2 -->
     <link name='rotor_2'>
-      <pose>-0.194 0.3 0.26 0.3 -0.45 0</pose>
-	  <!--<pose>-0.155 0.305 0.26 0.3 -0.45 0</pose>-->
+      <!--<pose>-0.194 0.3 0.26 0.3 -0.45 0</pose>-->
+	  <!--<pose>0.211396 0.119762 0.26 0 0 0</pose>-->
+	  <pose>0.3 0.18 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -277,7 +282,7 @@
       <child>rotor_2</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>-0.5 -0.5 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
@@ -292,8 +297,9 @@
 	
 	<!-- ROTOR 3 -->
     <link name='rotor_3'>
-      <pose>0.16 -0.312 0.26 0.3 -0.45 0</pose>
-	  <!--<pose>0.194 -0.297 0.26 0.3 -0.45 0</pose> -->
+      <!--<pose>0.16 -0.312 0.26 0.3 -0.45 0</pose>-->
+	  <!--<pose>-0.209396 -0.122762 0.26 0 0 2.09439510239</pose>-->
+	  <pose>-0.3 -0.18 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -345,7 +351,7 @@
       <child>rotor_3</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>-0.5 -0.5 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
@@ -360,7 +366,9 @@
 	
 	<!-- ROTOR 4 -->
     <link name='rotor_4'>
-	<pose>0.188 0.3 0.26 0 0.5 0</pose>
+	<!--<pose>0.188 0.3 0.26 0 0.5 0</pose>-->
+	<!--<pose>0.211396 -0.119762 0.26 0 0 -2.09439510239</pose>-->
+	<pose>0.3 -0.18 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -412,7 +420,7 @@
       <child>rotor_4</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>0.5 0 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
@@ -427,8 +435,9 @@
 	
 	<!-- ROTOR 5 -->
     <link name='rotor_5'>
-      <!--<pose>-0.194 -0.297 0.3 0 0 0</pose>-->
-	  <pose>-0.165 -0.312 0.26 0 0.5 0</pose>
+	  <!--<pose>-0.165 -0.312 0.26 0 0.5 0</pose>-->
+	  <!--<pose>-0.209396 0.122762 0.26 0 0 2.09439510239</pose>-->
+	  <pose>-0.3 0.18 0.26 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -480,7 +489,7 @@
       <child>rotor_5</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>0.5 0 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
